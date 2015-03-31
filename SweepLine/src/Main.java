@@ -17,7 +17,7 @@ Double x1,y1,x2,y2;
 boolean endpoint;
 String line= " ";
 BufferedReader br = new BufferedReader(new FileReader("D:\\git\\sweepline\\SweepLine\\src\\points"));
-ArrayList <Line> lines = new ArrayList<Line>();
+//ArrayList <Line> lines = new ArrayList<Line>();
 EventQueue eventsQueue = new EventQueue();
 
 //reading lines from file
@@ -32,15 +32,15 @@ while ((line = br.readLine()) != null)
 		x2 = Double.parseDouble(stringTokenizer.nextElement().toString());
 		y2 = Double.parseDouble(stringTokenizer.nextElement().toString());
 		Line l = new Line(x1,y1,x2,y2);
-		lines.add(l);
-		eventsQueue.insertionSort(l.getStart());
-		eventsQueue.insertionSort(l.getEnd());
+		//lines.add(l);
+		eventsQueue.insertionSort(l.getStart(),l);
+		eventsQueue.insertionSort(l.getEnd(),l);
 	}//while
 	
 }//while
 for(int i=0 ; i<eventsQueue.getevents().size();i++ )
 	System.out.println("Point:"+eventsQueue.getevents().get(i).getX()+","+eventsQueue.getevents().get(i).getY());
-
+eventsQueue.checkIntersect();
 
 }//main
 

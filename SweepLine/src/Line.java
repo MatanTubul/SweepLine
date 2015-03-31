@@ -31,6 +31,17 @@ public Line2D getLine()
 {
 	return this.line;
 }
+public boolean lineCompare(Line l)
+{
+	if(this.getLine().getX1()== l.getLine().getX1() && this.getLine().getY1() == l.getLine().getY1())
+	{
+		if(this.getLine().getX2()== l.getLine().getX2() && (this.getLine().getY2() == l.getLine().getY2()))
+		{
+			return true;
+		}
+	}
+	return false;
+}
 
 
 }
