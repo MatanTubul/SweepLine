@@ -16,7 +16,7 @@ Double x1,y1,x2,y2;
 
 boolean endpoint;
 String line= " ";
-BufferedReader br = new BufferedReader(new FileReader("D:\\git\\sweepline\\SweepLine\\src\\points"));
+BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\matant\\git\\SweepLine\\SweepLine\\src\\points"));
 //ArrayList <Line> lines = new ArrayList<Line>();
 EventQueue eventsQueue = new EventQueue();
 
