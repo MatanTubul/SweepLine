@@ -12,13 +12,14 @@ public class Main {
 public static void main(String[] args) throws IOException {
 
 Double x1,y1,x2,y2;
+System.out.println("Welcome to git");
 
 boolean endpoint;
 String line= " ";
 BufferedReader br = new BufferedReader(new FileReader("D:\\git\\sweepline\\SweepLine\\src\\points"));
 //ArrayList <Line> lines = new ArrayList<Line>();
 EventQueue eventsQueue = new EventQueue();
-
+System.out.println("Welcome to git");
 //reading lines from file
 while ((line = br.readLine()) != null) 
 {
