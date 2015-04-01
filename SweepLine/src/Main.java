@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-//PUSH AND COMMIT - NIR'S CHECK
+
 public class Main {
 
 public static void main(String[] args) throws IOException {
