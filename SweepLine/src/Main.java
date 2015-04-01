@@ -6,14 +6,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-//check 2
+
 public class Main {
 
 public static void main(String[] args) throws IOException {
 
 Double x1,y1,x2,y2;
 
-System.out.println("Welcome to Git");
 boolean endpoint;
 String line= " ";
 BufferedReader br = new BufferedReader(new FileReader("D:\\git\\sweepline\\SweepLine\\src\\points"));
