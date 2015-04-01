@@ -8,11 +8,10 @@ import java.util.StringTokenizer;
 
 //PUSH AND COMMIT - NIR'S CHECK
 public class Main {
-
+	
 public static void main(String[] args) throws IOException {
 
 Double x1,y1,x2,y2;
-
 
 boolean endpoint;
 String line= " ";
@@ -38,10 +37,18 @@ while ((line = br.readLine()) != null)
 	}//while
 	
 }//while
-for(int i=0 ; i<eventsQueue.getevents().size();i++ )
-	System.out.println("Point:"+eventsQueue.getevents().get(i).getX()+","+eventsQueue.getevents().get(i).getY());
-eventsQueue.checkIntersect();
+
+eventsQueue.findIntersections();
+
+//print intersections
+for(int i=0 ; i<eventsQueue.getIntersections().size();i++ )
+	System.out.println("Point:"+eventsQueue.getIntersections().get(i).getX()+","+eventsQueue.getIntersections().get(i).getY());
+
+
 
 }//main
+
+
+
 
 }//class Main

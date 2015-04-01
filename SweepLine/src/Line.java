@@ -4,6 +4,7 @@ public class Line {
 
 private Line2D line;
 private Point start,end;
+private int tempArrayListIndex;
 
 public Line (double x1,double y1,double x2,double y2)
 {
@@ -41,6 +42,14 @@ public boolean lineCompare(Line l)
 		}
 	}
 	return false;
+}
+
+public int getTempArrayListIndex() {
+	return tempArrayListIndex;
+}
+
+public void setTempArrayListIndex(int tempArrayListIndex) {
+	this.tempArrayListIndex = tempArrayListIndex;
 }
 
 
