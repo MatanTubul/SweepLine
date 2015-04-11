@@ -8,8 +8,16 @@ private int tempArrayListIndex;
 
 public Line (double x1,double y1,double x2,double y2)
 {
+	if (y1>y2)
+	{
 	setStart(new Point(x1,y1,false));
 	setEnd(new Point (x2,y2,true));
+	}
+	else 
+	{
+	setStart(new Point(x2,y2,false));
+	setEnd(new Point (x1,y1,true));
+	}
 	this.line= new Line2D.Double(x1,y1,x2,y2);
 }
 
