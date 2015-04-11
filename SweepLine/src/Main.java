@@ -21,7 +21,7 @@ System.out.println("x1 y1 x2 y2");
 //reading lines from file
 while ((line = br.readLine()) != null) 
 {
-	System.out.println(line);
+	System.out.println(" "+line);
 	StringTokenizer stringTokenizer = new StringTokenizer(line," ");
 	while (stringTokenizer.hasMoreElements()) 
 	{
