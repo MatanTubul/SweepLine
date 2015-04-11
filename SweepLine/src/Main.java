@@ -17,7 +17,7 @@ BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\matant\\git\\S
 
 //ArrayList <Line> lines = new ArrayList<Line>();
 EventQueue eventsQueue = new EventQueue();
-System.out.println("Welcome to git");
+System.out.println("x1 y1 x2 y2");
 //reading lines from file
 while ((line = br.readLine()) != null) 
 {
