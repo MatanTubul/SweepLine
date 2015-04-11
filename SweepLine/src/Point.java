@@ -6,9 +6,9 @@ private boolean end;
 
 public Point (double n1,double n2,boolean end)
 {
-	x = n1;
+	setX(n1);
 	setY(n2);
-	this.end = end;
+	this.setEnd(end);
 }
 
 public double getY() {
@@ -25,6 +25,14 @@ public double getX() {
 
 public void setX(double x) {
 	this.x = x;
+}
+
+public boolean isEnd() {
+	return end;
+}
+
+public void setEnd(boolean end) {
+	this.end = end;
 }
 
 
